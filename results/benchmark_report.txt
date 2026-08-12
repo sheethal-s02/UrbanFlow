@@ -1,0 +1,64 @@
+URBANFLOW
+TRAFFIC OPTIMIZATION BENCHMARK REPORT
+=====================================
+
+EXPERIMENT
+----------
+
+Traffic scenarios: 10
+Comparison: Fixed traffic lights vs Adaptive traffic lights
+Same random seeds used for both systems
+Simulation duration: 180 seconds per scenario
+
+
+AVERAGE RESULTS
+---------------
+
+                    FIXED        ADAPTIVE
+Average wait        13.95       6.77
+Average speed       13.56       21.34
+Throughput          0.576560       0.650435
+Completed trips     103.80       117.10
+
+
+IMPROVEMENT
+-----------
+
+Waiting time improvement:
+51.46%
+
+Average speed improvement:
+57.29%
+
+Throughput improvement:
+12.81%
+
+
+INTERPRETATION
+--------------
+
+Adaptive traffic signals were evaluated against fixed-time
+traffic signals under identical traffic scenarios.
+
+Waiting time is better when lower.
+
+Average speed and throughput are better when higher.
+
+The benchmark uses multiple random seeds so that the result
+does not depend on a single traffic scenario.
+
+
+FILES
+-----
+
+Raw experiment data:
+results/benchmark_results.csv
+
+Waiting-time graph:
+results/waiting_time_comparison.png
+
+Speed graph:
+results/speed_comparison.png
+
+Throughput graph:
+results/throughput_comparison.png
